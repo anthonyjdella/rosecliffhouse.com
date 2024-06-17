@@ -26,8 +26,11 @@ npm install sass
 sass assets/sass/main.scss assets/css/main.css
 ```
 
-```{examples} Click to reveal
+<details>
+	<summary>Expand for more</summary>
+
 ### Examples
+
 	Span Modifiers
 	==============
 
@@ -350,4 +353,4 @@ sass assets/sass/main.scss assets/css/main.css
 					</div>
 				</div>
 				```
-```
+</details>
