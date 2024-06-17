@@ -1,14 +1,14 @@
 # Rose Cliff House 🌹🏠
 
-[www.rosecliffhouse.com](https://www.rosecliffhouse.com/)
+[rosecliffhouse.com](https://www.rosecliffhouse.com/)
 
 Discover the Rose Cliff House, where panoramic views and luxurious living converge in perfect harmony.
 
 ## Social Media
 
-[instagram.com/RoseCliffHouse](https://www.instagram.com/rosecliffhouse/)
-[x.com/RoseCliffHouse](https://x.com/RoseCliffHouse)
-[facebook.com/RoseCliffHouse](https://facebook.com/rosecliffhouse)
+* [Instagram](https://www.instagram.com/rosecliffhouse/)
+* [Twitter/x](https://x.com/RoseCliffHouse)
+* [Facebook](https://facebook.com/rosecliffhouse)
 
 ## Development
 
