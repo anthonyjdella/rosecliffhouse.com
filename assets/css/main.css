@@ -326,7 +326,7 @@ h1.major:after, h2.major:after, h3.major:after {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
 }
 h1.major {
