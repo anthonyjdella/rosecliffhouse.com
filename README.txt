@@ -14,6 +14,11 @@ Discover the Rose Cliff House, where panoramic views and luxurious living conver
 
 Theme: Ethereal by HTML5 UP
 
+### Code
+
+To update content, make changes to `index.html`
+To update CSS, make changes to `assets/sass/{file.scss}`, then compile the CSS using the build command (below).
+
 ### Build
 
 ```
@@ -62,7 +67,7 @@ sass assets/sass/main.scss assets/css/main.css
 			The primary building block of Ethereal.
 
 			HTML
-
+				```
 				<section class="panel (size modifier) (color modifier)">
 					<div class="intro (color modifier)">
 						(intro content)
@@ -71,6 +76,8 @@ sass assets/sass/main.scss assets/css/main.css
 						(inner content)
 					</div>
 				</section>
+				```
+
 
 				Note: The entire "intro" child element can be excluded.
 				Note: You can have as many "intro" and "inner" child elements as you like.
@@ -105,6 +112,7 @@ sass assets/sass/main.scss assets/css/main.css
 
 				Here's a very basic example:
 
+				```
 					<section class="panel medium color0">
 						<div class="intro">
 							<h2 class="major">Panel</h2>
@@ -114,9 +122,11 @@ sass assets/sass/main.scss assets/css/main.css
 							<p>Lorem ipsum dolor sit amet.</p>
 						</div>
 					</section>
+				```
 
 				And here's a more advanced example using columns and *no* size modifier:
 
+					```
 					<section class="panel color2">
 						<div class="intro">
 							<h2 class="major">Panel</h2>
@@ -134,6 +144,7 @@ sass assets/sass/main.scss assets/css/main.css
 							</div>
 						</div>
 					</section>
+					```
 
 				Note: The "intro" child element already has a fixed width, so a span modifier
 				isn't required.
@@ -146,6 +157,7 @@ sass assets/sass/main.scss assets/css/main.css
 
 			HTML
 
+				```
 				<section class="panel banner (size modifier) (color modifier) (orientation modifier)">
 					<div class="content (color modifier)">
 						(content)
@@ -154,6 +166,7 @@ sass assets/sass/main.scss assets/css/main.css
 						<img src="(image URL)" alt="" />
 					</div>
 				</section>
+				```
 
 			Modifiers
 
@@ -181,6 +194,7 @@ sass assets/sass/main.scss assets/css/main.css
 
 			Example
 
+				```
 				<section class="panel banner medium right">
 					<div class="content color0">
 						<h1>Banner</h1>
@@ -190,6 +204,7 @@ sass assets/sass/main.scss assets/css/main.css
 						<img src="/path/to/image.jpg" alt="" />
 					</div>
 				</section>
+				```
 
 
 		Panel (Spotlight)
@@ -199,6 +214,7 @@ sass assets/sass/main.scss assets/css/main.css
 
 			HTML
 
+				```
 				<section class="panel spotlight (size modifier) (orientation modifier)">
 					<div class="content (span modifier)">
 						(content)
@@ -207,6 +223,7 @@ sass assets/sass/main.scss assets/css/main.css
 						<img src="(image URL)" alt="" />
 					</div>
 				</section>
+				```
 
 			Modifiers
 
@@ -234,6 +251,7 @@ sass assets/sass/main.scss assets/css/main.css
 
 			Example
 
+				```
 				<section class="panel spotlight large right">
 					<div class="content">
 						<h1>Spotlight</h1>
@@ -243,6 +261,7 @@ sass assets/sass/main.scss assets/css/main.css
 						<img src="/path/to/image.jpg" alt="" />
 					</div>
 				</section>
+				```
 
 
 		Gallery
@@ -252,6 +271,7 @@ sass assets/sass/main.scss assets/css/main.css
 
 			HTML
 
+				```
 				<div class="gallery">
 					<a href="(full image URL)" class="image (image modifiers) (span modifier)" data-position="(image position modifier)">
 						<img src="(thumbnail image URL)" alt="" />
@@ -279,6 +299,7 @@ sass assets/sass/main.scss assets/css/main.css
 					</div>
 					...
 				</div>
+				```
 
 				Note: The "group" element creates a dual-row group of images. Images inside this group will
 				automatically wrap to the next row when they exceed its width (as defined by its span modifier).
@@ -305,6 +326,7 @@ sass assets/sass/main.scss assets/css/main.css
 
 			Example
 
+				```
 				<div class="gallery">
 					<a href="/images/thumbnails/01.jpg" class="image filtered span-2" data-position="center">
 						<img src="/images/fulls/01.jpg" alt="" />
@@ -327,4 +349,5 @@ sass assets/sass/main.scss assets/css/main.css
 						</a>
 					</div>
 				</div>
+				```
 ```
