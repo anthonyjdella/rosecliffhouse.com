@@ -1,6 +1,6 @@
 # 🌹 Rose Cliff House
 
-[www.rosecliffhouse.com/](https://www.rosecliffhouse.com/)
+[www.rosecliffhouse.com](https://www.rosecliffhouse.com/)
 
 Ethereal by HTML5 UP
 html5up.net | @ajlkn
