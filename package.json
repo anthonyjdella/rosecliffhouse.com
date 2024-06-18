@@ -1,0 +1,23 @@
+{
+  "name": "rosecliffhouse.com",
+  "version": "1.0.0",
+  "description": "Rose Cliff House",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonyjdella/rosecliffhouse.com.git"
+  },
+  "author": "Anthony Dellavecchia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonyjdella/rosecliffhouse.com/issues"
+  },
+  "homepage": "https://github.com/anthonyjdella/rosecliffhouse.com#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-server": "^14.1.1"
+  }
+}
