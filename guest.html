@@ -63,11 +63,11 @@
 												<tbody>
 													<tr>
 														<td>RoseCliffHouse</td>
-														<td><i>(click lock to reveal)</i></td>
+														<td id="passwordDisplay"><i>(click lock to reveal)</i></td>
 													</tr>
 												</tbody>
 											</table>
-											<a href="#" class="button primary color2 circle icon solid fa-lock">Icon</a>
+											<button id="toggle-password" class="button primary color2 circle icon solid fa-lock" onclick="togglePassword()">Icon</button>
 										</div>
 									</div>
 								</div>
@@ -109,6 +109,21 @@
 			gtag('js', new Date());
 
 			gtag('config', 'G-3JRH164SW2');
+			</script>
+			<script>
+				function togglePassword() {
+					var passwordSpan = document.getElementById('passwordDisplay');
+					var currentText = passwordSpan.textContent.trim();
+
+					if (currentText === "(click lock to reveal)") {
+						// Replace placeholder text with actual password from environment variable
+						var password = process.env.WIFI_PASSWORD; // Replace with your actual environment variable name
+						passwordSpan.innerHTML = password;
+					} else {
+						// Hide the password again
+						passwordSpan.innerHTML = "<i>(click lock to reveal)</i>";
+					}
+				}
 			</script>
 
 	</body>
