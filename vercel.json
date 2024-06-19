@@ -2,5 +2,10 @@
     "rewrites": [
         { "source": "/guest", "destination": "/guest.html" },
         { "source": "/(.*)", "destination": "/index.html" }
-    ]
+    ],
+    "build": {
+        "env": {
+            "WIFI_PASSWORD": "${WIFI_PASSWORD}"
+        }
+    }
 }
