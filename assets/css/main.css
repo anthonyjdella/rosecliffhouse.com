@@ -509,6 +509,8 @@ form > .fields > .field {
   flex-shrink: 0;
   padding: 1.5rem 0 0 1.5rem;
   width: calc(100% - 1.5rem);
+  display: flex;
+  flex-direction: column;
 }
 form > .fields > .field.half {
   width: calc(50% - 0.75rem);
@@ -527,6 +529,8 @@ form > .fields > .field.quarter {
   form > .fields > .field {
     padding: 1.125rem 0 0 1.125rem;
     width: calc(100% - 1.125rem);
+    display: flex;
+    flex-direction: column;
   }
   form > .fields > .field.half {
     width: calc(100% - 1.125rem);
@@ -3092,9 +3096,3 @@ body.is-preload #wrapper {
   body.is-preload #wrapper {
     -moz-transform: none;
     -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-  }
-}
-
-/*# sourceMappingURL=main.css.map */
