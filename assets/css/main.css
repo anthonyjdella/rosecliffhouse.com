@@ -3096,3 +3096,9 @@ body.is-preload #wrapper {
   body.is-preload #wrapper {
     -moz-transform: none;
     -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

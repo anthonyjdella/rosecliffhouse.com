@@ -1,188 +1,61 @@
-<!DOCTYPE HTML>
-<!--
-	Ethereal by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Rose Cliff House</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-		<link rel="manifest" href="images/favicon/site.webmanifest">
-	</head>
-	<body class="is-preload">
-
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-
-				<!-- Wrapper -->
-					<div id="wrapper" style="width: -webkit-fill-available;">
-
-						<!-- Panel (Banner) -->
-							<section class="panel banner right">
-								<div class="content color0 span-3-75">
-									<h1 class="major">ROSE CLIFF HOUSE</h1>
-									<p>Welcome to Anh & Tony's home</p>
-									<ul class="actions">
-										<li><a href="#first" class="button primary color1 circle icon solid fa-angle-right">Next</a></li>
-									</ul>
-								</div>
-								<div class="image filtered span-1-75" data-position="45% 25%">
-									<img src="images/16404.jpg" alt="" />
-								</div>
-							</section>
-
-						<!-- Panel (Spotlight) -->
-							<section class="panel spotlight medium right" id="first">
-								<div class="content span-7">
-									<h2 class="major"></h2>
-								</div>
-								<div class="image filtered tinted" data-position="top left">
-									<img src="images/16404.png" alt="" />
-								</div>
-							</section>
-
-						<!-- Panel -->
-							<section class="panel color2-alt">
-								<div class="intro color2">
-									<h2 class="major">Wi-Fi</h2>
-								</div>
-								<div class="inner columns">
-									<div class="span-3">
-										<h3 class="major">Network</h3>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Name</th>
-														<th>Password</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>RoseCliffHouse</td>
-														<td id="passwordDisplay"><i>(click the lock button to reveal)</i></td>
-													</tr>
-												</tbody>
-											</table>
-											<button id="toggle-password" class="button primary color2 circle icon solid fa-lock" onclick="togglePassword()">Icon</button>
-										</div>
-									</div>
-								</div>
-							</section>
-
-							<!-- Panel -->
-							<section class="panel color4-alt">
-								<div class="intro color4">
-									<h2 class="major">Social</h2>
-								</div>
-								<div class="inner columns divided">
-									<div class="span-1-5">
-										<ul class="contact-icons color1">
-											<li class="icon brands fa-twitter"><a href="https://x.com/RoseCliffHouse">@RoseCliffHouse</a></li>
-											<li class="icon brands fa-facebook-f"><a href="https://facebook.com/rosecliffhouse">@RoseCliffHouse</a></li>
-											<li class="icon brands fa-instagram"><a href="https://www.instagram.com/rosecliffhouse/">@RoseCliffHouse</a></li>
-										</ul>
-									</div>
-								</div>
-							</section>
-
-							<section class="panel color2-alt">
-								<div class="intro color2">
-									<h2 class="major">Guest Book</h2>
-								</div>
-								<div class="inner columns">
-									<div class="span-4-5">
-										<h3 class="major">Comments</h3>
-										<form id="guestBookForm" method="post" action="#">
-											<div class="fields">
-												<div class="field third">
-													<label for="demo-name">Name</label>
-													<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-												</div>
-												<div class="field">
-													<label for="demo-message">Message</label>
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="2"></textarea>
-												</div>
-											</div>
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="primary color2" /></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-											<div id="comments" style="overflow-y: auto; max-height: 5rem;"></div>
-										</form>
-								</div>
-							</section>
-
-						<!-- Copyright -->
-							<div class="copyright">&copy; Anh & Tony</div>
-
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/main.js"></script>
-			<!-- Google tag (gtag.js) -->
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-3JRH164SW2"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'G-3JRH164SW2');
-			</script>
-			<script>
-				function togglePassword() {
-					var passwordSpan = document.getElementById('passwordDisplay');
-					var currentText = passwordSpan.textContent.trim();
-
-					if (currentText === "(click the lock button to reveal)" || 	currentText === "(click lock to reveal)") {
-						// Replace placeholder text with actual password from environment variable
-						var password = "tony123"; // Replace with your actual environment variable name
-						passwordSpan.textContent = password;
-					} else {
-						// Hide the password again
-						passwordSpan.innerHTML = "<i>(click the lock button to reveal)</i>";
-					}
-				}
-
-				document.getElementById('guestBookForm').addEventListener('submit', function(e) {
-					e.preventDefault();
-					
-					const name = document.getElementById('demo-name').value;
-					const comment = document.getElementById('demo-message').value;
-
-					if (name && comment) {
-						const commentSection = document.getElementById('comments');
-
-						const commentDiv = document.createElement('div');
-						commentDiv.className = 'comment';
-
-						const commentName = document.createElement('h3');
-						commentName.textContent = name;
-
-						const commentText = document.createElement('p');
-						commentText.textContent = comment;
-
-						commentDiv.appendChild(commentName);
-						commentDiv.appendChild(commentText);
-
-						commentSection.appendChild(commentDiv);
-
-						document.getElementById('guestBookForm').reset();
-					}
-				});
-			</script>
-
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Cliff House GuestBook</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+        }
+        #pdf-viewer {
+            width: 100vw;
+            height: 100vh;
+            overflow: auto;
+            position: relative;
+            background: white;
+            border: 1px solid #ccc;
+        }
+        #pdf-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #toolbar {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            z-index: 1000;
+            width: 100%;
+            max-width: 600px; /* Limit toolbar width */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        #toolbar button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="pdf-viewer">
+        <iframe id="pdf-iframe" src="welcome-book.pdf"></iframe>
+    </div>
+</body>
 </html>
