@@ -6,7 +6,7 @@ Discover the Rose Cliff House, where panoramic views and luxurious living conver
 
 ## Book Your Stay
 
-Visiting Seattle? Book your stay at the Rose Cliff House on (Airbnb)[https://airbnb.com/h/rosecliffhouse].
+Visiting Seattle? Book your stay at the Rose Cliff House on [Airbnb](https://airbnb.com/h/rosecliffhouse).
 
 
 ## Social Media
