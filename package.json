@@ -32,7 +32,7 @@
     "escape-html": "^1.0.3",
     "etag": "^1.8.1",
     "eventemitter3": "^4.0.7",
-    "express": "^4.19.2",
+    "express": "^4.20.0",
     "finalhandler": "^1.2.0",
     "follow-redirects": "^1.15.6",
     "forwarded": "^0.2.0",
